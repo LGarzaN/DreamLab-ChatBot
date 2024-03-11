@@ -1,8 +1,12 @@
 import openai
+import os
+from dotenv import load_dotenv
 
 from session import Session, SessionManager
 
-openai.api_key = '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'
+load_dotenv()
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 session_manager = SessionManager()
 
