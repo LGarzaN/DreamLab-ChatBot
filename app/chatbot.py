@@ -2,7 +2,7 @@ import openai
 
 from session import Session, SessionManager
 
-openai.api_key = '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'
+openai.api_key = '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'
 
 session_manager = SessionManager()
 
