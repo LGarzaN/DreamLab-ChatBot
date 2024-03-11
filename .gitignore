@@ -1,3 +1,6 @@
 .env
 
-__pycache__/
+
+# ignore pycache folder
+global-exclude __pycache__
+global-exclude *.pyc
