@@ -14,6 +14,7 @@ load_dotenv()
 client = openai.OpenAI()
 model = "gpt-4-turbo"
 vector_store_id = os.environ.get("VECTOR_STORE_ID")
+assistant = os.environ.get("ASSISTANT_ID")
 
 # Valor de la API Key para comunicarse con la base de datos
 api_key = os.environ.get("X_API_KEY")
@@ -302,7 +303,7 @@ def get_reservations(user_id):
 
 class AssistantManager:
     thread_id = None
-    assistant_id = "asst_XPg009w2uccOa5eKVeg62dxO"
+    assistant_id = assistant
 
     def __init__(self, model: str = model):
         self.client = client
